@@ -6,7 +6,7 @@ IF DB_ID('Poseidon') IS NOT NULL
 GO
 
 IF @@ERROR = 3702 
-   RAISERROR('БД нельзя удалить из-за открытых соединений.', 127, 127) WITH NOWAIT, LOG;
+   RAISERROR('If connect to DB open You will not be able to delete', 127, 127) WITH NOWAIT, LOG;
 GO
 
 CREATE DATABASE Poseidon 
